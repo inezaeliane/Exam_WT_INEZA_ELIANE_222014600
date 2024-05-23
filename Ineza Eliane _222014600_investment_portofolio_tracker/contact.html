@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Portofolio Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+        .card {
+            margin-bottom: 20px;
+        }
+
+        /* Center Align */
+        .text-center {
+            text-align: center;
+        }
+
+        /* Right Align */
+        .text-right {
+            text-align: right;
+        }
+
+        /* Left Align */
+        .text-left {
+            text-align: left;
+        }
+        .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color with 50% opacity */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure overlay is above the background */
+  }
+
+  .container {
+    position: relative;
+    z-index: 2; /* Ensure container is above the overlay */
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #FFFFFF; /* White */
+    background-color: #007BFF; /* Blue */
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #0056b3; /* Darker Blue */
+    box-shadow: 2px;
+  }
+
+  .btn-register {
+    background-color: #000000; /* Black */
+    margin-left: 20px;
+  }
+
+  .btn-register:hover {
+    background-color: #333333; /* Darker Black */
+  }
+  
+        .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label,
+.contact input,
+.contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact button {
+    display: block;
+    margin: 0 auto;
+    background-color: gray;
+    color: #fff;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+    </style>
+<body>
+    <div class="sidebar">
+        <div class="logo">Logo</div>
+        <ul class="menu">
+            <li class="active">
+                <a href="Dashboard.php">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="register.html">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="Service.php">
+                    <i class="fas fa-list"></i>
+                    <span>All Tracker</span>
+                </a>
+                
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="logout.php">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+                <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="register.html">Create new Account</a></li>
+     
+      </ul>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <img src="pic.jpg" alt="User Image">
+            </div>
+            <div class="overlay">
+              <div class="container">
+                <h1>Welcome to Investment Portofolio Tracker</h1>
+                <section id="contact" class="contact">
+                    <h2>Contact Us</h2>
+                    <p>Have a question or need assistance? Contact us!</p>
+                    <form action="contact.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </section>
+                
+              </div>
+            </div>
+
+        </div>
+        <footer>
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              
+          </ul>
+          <p>Connect with us on social media or social networkings:
+      
+              <a href="https://www.twitter.com/stockmgt">Twitter</a>
+              <a href="https://www.facebook.com/stockmgt">Facebook</a>
+              <a href="https://www.instagram.com/stockmgt">Instagram</a>
+              <a href="https://www.linkedin.com/stockmgt">LinkedIn</a>
+            </p>
+          <p>&copy; 2024 My Website. All rights reserved.</p>
+      </footer>
+        </div>
+       
+    </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

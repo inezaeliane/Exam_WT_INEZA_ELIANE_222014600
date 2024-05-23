@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport">
+        <title>Investment Portfolio Tracker</title>
+        <style>
+                    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('./image/Investment-portfolio.jpg') center/cover no-repeat;
+    /* Replace 'background-image.jpg' with your image path */
+    /* background-color: #FFFFFF; /* White fallback */
+    color: #cab4b4; /* White */
+    background-blend-mode: overlay;
+    height: 100vh;
+  }
+            
+            * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #b6b1b8;
+}
+
+.full-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 40%;
+    background-color: #dec6c6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(85, 85, 131);
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    color: #419fc7;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #b65ccf;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: rgb(51, 169, 202);
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+.labeltext {
+    font-weight: bold;
+    color: rgb(24, 24, 176);
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="full-screen-container">
+            <div class="login-container">
+                <h1 class="login-title">Investment Portofolio Tracker</h1>
+                <form action="login.php" class="form" method="post">
+
+                    <div class="input-group">
+                        
+
+                        <label for="uname">User Name</label>
+                        <input type="text" class="uname" name="uname" placeholder="Enter UserName" required>
+                   <span>  </span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="password" name="password" placeholder="Enter Password" required>
+                        <span>  </span>
+                    </div>
+
+                    <button type="submit" class="login-button">Login</button>
+                    <div class="sing-up-word"><a href="register.html">Create account</a></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

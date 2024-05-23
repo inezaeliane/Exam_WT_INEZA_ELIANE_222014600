@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 115px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186,255);
+}
+
+.sidebar:hover {
+    width: 350px;
+    transition: 0.5s;
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+    background: rgb(191, 175, 207);
+}
+
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* main body */
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.header--wrapper img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--title {
+    color: rgb(84, 57, 239);
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+    gap: 1;
+    font-weight: bold;
+}
+
+.search--box {
+    background: rgba(237, 237, 237);
+    border-radius: 15px;
+    color: rgb(201, 216, 223);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.search--box input {
+    background: transparent;
+    padding: 20px;
+}
+
+.search--box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search--box i:hover {
+    transform: scale(1.2);
+}
+
+/* CARD CONTAINER*/
+
+.card--container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main--title {
+    color: rgb(84, 57, 239);
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+.title {
+    font-size: 12px;
+    font-weight: 200;
+   
+}
+
+.amount--value {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: #999999e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      color: #fff;
+      padding: 1rem;
+}
+
+
+
+/* tabular section*/
+
+tfoot{
+    background: rgba(113, 99, 186,255);
+    font-weight: bold;
+    color: #fff;
+}
+tfoot td{
+    padding: 15PX;
+    color: #fff;
+}
+.table-container button{
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+
+.card {
+    margin-bottom: 20px;
+}
+
+/* Center Align */
+.text-center {
+    text-align: center;
+}
+
+/* Right Align */
+.text-right {
+    text-align: right;
+}
+
+/* Left Align */
+.text-left {
+    text-align: left;
+}
+
+.card-body {
+   
+position: relative;
+display: block;
+    padding: 10px;
+    margin-right: 20px;
+    position: relative;
+    
+}
+
+.card-title {
+    /* Customize the title styling */
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+
+
+.card:hover {
+transform: scale(1.05);
+}
+.dropdown-menu {
+    display: none;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.dropdown-menu li {
+    margin-bottom: 0.5px;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.2px;
+    display: list-item;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu .dropdown-toggle.active + .dropdown-menu {
+    display: list-item;
+}
+
+
+/*form */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type="date"],
+select {
+width: 100%;
+padding: 8px;
+margin: 5px 0;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.container {
+max-width: 800px;
+margin: auto;
+padding: 20px;
+}
+/*SERVICE LINK*/
+.header--title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--title h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333; /* Adjust color as needed */
+}
+
+.header--title li {
+    margin-left: 20px;
+    display: inline-block;
+    
+}
+
+.header--title li a {
+    text-decoration: none;
+    color: #666; /* Adjust color as needed */
+
+}
+.header--title li a:hover {
+    color: #000; /* Adjust color for hover state */
+}
+ 
+
